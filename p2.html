@@ -1,0 +1,15 @@
+<html>
+    <body><h2>CallBack</h2></body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <script>
+        function disp(value){
+            document.getElementById("i1").innerHTML=value;
+        }
+        function calc(a,b,fun){
+         let sum=a+b;
+         fun(sum);
+        }
+        calc(4,8,disp);
+    </script>
+</html>

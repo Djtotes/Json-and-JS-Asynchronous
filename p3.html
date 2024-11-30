@@ -1,0 +1,32 @@
+<html>
+<body>
+    <h2>Promisele</h2>
+<p id="i1"></p>
+<p id="i2"></p>
+<script>
+    function disp(value){
+        document.getElemntById("i1").innerHTML=value;
+    }
+    let pr=new Promise(function(res,rej){
+        let a=0;
+        if(a==0){
+            res("OK");
+        }
+        else{
+            rej("ERROR");
+        }
+   
+    });
+    pr.then(
+        function(x){disp(x);},
+        function(e){disp(e);}
+    );
+
+    async function sum(a,b){
+        let r=await a+b;
+        disp(r);
+    }
+    sum(4,9):
+</script>
+</body>
+</html>

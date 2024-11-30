@@ -1,5 +1,14 @@
 <html>
     <body>
-        
+        <script>
+            var student={name:"Success",
+                age:50,
+                gen:"M"
+            };
+            var s=JSON.stringify(student);
+            document.write(s.name+"<br>");
+            var obj=JSON.parse(s);
+            document.write(obj.name + "<br>");
+            </script>
     </body>
 </html>
